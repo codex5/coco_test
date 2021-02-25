@@ -5,7 +5,7 @@ $(document).ready(function () {
   
     var $e = $(e.relatedTarget);
     var idx = $e.index();
-    var itemsPerSlide = 4;
+    var itemsPerSlide = 6;
     var totalItems = $('.carousel-item').length;
     
     if (idx >= totalItems-(itemsPerSlide-1)) {
@@ -24,22 +24,7 @@ $(document).ready(function () {
 
 
   $('#carouselExample').carousel({ 
-                interval: false
-        });
-
-
-  $(document).ready(function() {
-/* show lightbox when clicking a thumbnail */
-    $('a.thumb').click(function(event){
-      event.preventDefault();
-      var content = $('.modal-body');
-      content.empty();
-        var title = $(this).attr("title");
-        $('.modal-title').html(title);        
-        content.html($(this).html());
-        $(".modal-profile").modal({show:true});
-    });
-
+    interval: false
   });
 
 });

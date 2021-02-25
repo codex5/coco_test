@@ -1,0 +1,160 @@
+.container-fluid {
+    max-width: 1240px;
+    margin: 100px auto 100px;
+    overflow: hidden;
+    .carousel-inner {
+        position: relative;
+        top: 0;
+        left: -12%;
+        display: block;
+        width: 1440px !important;
+    }
+    .carousel-custom {
+        overflow: hidden;
+    }
+    .chevron-icon {
+        width: 70px;
+        height: 70px;
+        background: #fff;
+        opacity: 1;
+        border-radius: 50%;
+        top: 50%;
+        transform: translatey(-50%);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        opacity: 0.8;
+        span {
+            background-image: url('../image/chevron-left.svg');
+        }
+    }
+    .chevron-icon.carousel-control-next {
+        right: -14px;
+        span {
+            transform: rotate(180deg);
+        }
+    }
+    .chevron-icon.carousel-control-prev {
+        left: -14px;
+    }
+    .carousel-item {
+        transition: none;
+        display: block;
+        margin: 0;
+        position: relative;
+        padding: 15px 15px 0;
+        .sale-label {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 9;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .text-center {
+            position: relative;
+        }
+        .product-image {
+            position: relative;
+            width: 100%;
+            padding-bottom: 250px;
+            height: 100%;
+            display: block;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100% !important;
+                display: block;
+                margin: auto;
+                max-width: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .product-details {
+            .rating-star {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 15px 0 0;
+                .star-icon {
+                    display: flex;
+                    margin-right: 3px;
+                    .item {
+                        background-image: url("../image/star.svg");
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 3px;
+                        display: block;
+                        background-repeat: no-repeat;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .product-name {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 0;
+                min-height: 63px;
+                h4 {
+                    margin: 0;
+                    font-weight: 400;
+                    color: #000;
+                    font-size: 20px;
+                    padding: 15px 0 0;
+                    text-transform: capitalize;
+                }
+            }
+            .product-price {
+                padding: 15px 0 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .h4 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 0;
+                    font-weight: 400;
+                    font-size: 20px;
+                    padding: 0;
+                    margin: 0 20px;
+                    text-transform: capitalize;
+                    color: #f4436c;
+                }
+                .h4.old-price {
+                    text-decoration: line-through;
+                    color: #222;
+                }
+            }
+            .add_to_cart {
+                margin: 15px 0 0;
+                width: 100%;
+                color: #fff;
+                text-transform: initial;
+                background-color: #f4436c;
+                border-color: #f4436c;
+                height: 58px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    background-color: #f21f50;
+                    border-color: #f11346;
+                }
+                span {
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+.carousel.slide {
+    padding: 0 25px;
+}
