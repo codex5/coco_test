@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile-dev": "node-sass css/carousel.scss css/carousel.css --output-style expanded",
-    "compile-prod": "node-sass css/carousel.scss css/carousel.css --output-style compressed"
+    "compile-dev": "node-sass static/sass/style.scss static/css/style.css --output-style expanded",
+    "compile-prod": "node-sass static/sass/style.scss static/css/style.css --output-style compressed"
   },
   "author": "",
   "license": "ISC",
